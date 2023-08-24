@@ -12,3 +12,6 @@ jobs:
     steps:
       - run: echo 'The Build workflow was triggered'
       - run: echo 'Did other things too'
+      - run: date
+      # return error code 1 to fail the job
+      - run: exit 1
