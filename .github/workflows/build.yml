@@ -1,0 +1,14 @@
+name: Build
+
+# on pushes to any branches
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'The Build workflow was triggered'
+      - run: echo 'Did other things too'
